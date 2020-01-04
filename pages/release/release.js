@@ -1,4 +1,4 @@
-// pages/category/category.js
+// pages/release/release.js
 Page({
 
   /**

@@ -12,12 +12,13 @@
 		"autoAudits": false,
 		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkSiteMap": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
 	"appid": "wxb23cb88f718f3b0c",
-	"projectname": "YingE%20Market",
+	"projectname": "WeiBoo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

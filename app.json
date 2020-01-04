@@ -1,49 +1,48 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/category/category",
+    "pages/follow/follow",
     "pages/find/find",
-    "pages/cart/cart",
+    "pages/release/release",
+    "pages/message/message",
     "pages/profile/profile"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#464C5B",
-    "navigationBarTitleText": "影儿商城",
+    "navigationStyle" : "custom",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor": "#dd2453",
+    "selectedColor" : "#000",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "商城",
-        "iconPath": "/icons/index.png",
-        "selectedIconPath": "/icons/index_active.png"
-      },
-      {
-        "pagePath": "pages/category/category",
-        "text": "分类",
-        "iconPath": "/icons/order_unread.png",
-        "selectedIconPath": "/icons/order_unread_active.png"
+        "pagePath": "pages/follow/follow",
+        "text": "关注",
+        "iconPath": "/icons/home.png",
+        "selectedIconPath": "/icons/home_fill.png"
       },
       {
         "pagePath": "pages/find/find",
         "text": "发现",
-        "iconPath": "/icons/view.png",
-        "selectedIconPath": "/icons/view_active.png"
+        "iconPath": "/icons/search.png",
+        "selectedIconPath": "/icons/search_fill.png"
       },
       {
-        "pagePath": "pages/cart/cart",
-        "text": "购物车",
-        "iconPath": "/icons/cart_empty.png",
-        "selectedIconPath": "/icons/cart_empty_active.png"
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "/icons/edit.png",
+        "selectedIconPath": "/icons/edit_fill.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/icons/message.png",
+        "selectedIconPath": "/icons/message_fill.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
-        "iconPath": "/icons/user.png",
-        "selectedIconPath": "/icons/user_active.png"
+        "iconPath": "/icons/people.png",
+        "selectedIconPath": "/icons/people_fill.png"
       }
     ]
   },
