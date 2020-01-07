@@ -1,2 +1,2 @@
-<!--pages/find/find.wxml-->
+<bar-navigation type="search"></bar-navigation>
 <text>发现</text>

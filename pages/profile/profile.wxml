@@ -1,2 +1,2 @@
-<!--pages/profile/profile.wxml-->
+<bar-navigation></bar-navigation>
 <text>我的</text>
