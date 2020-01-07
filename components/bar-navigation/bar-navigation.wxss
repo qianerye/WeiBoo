@@ -1,6 +1,7 @@
 /* components/navbar/index.wxss */
 
 .navbar {
+  height :64rpx;
   width: 100%;
   overflow: hidden;
   position: relative;

@@ -1,11 +1,11 @@
 <!--components/hot-search-navigation.wxml-->
-<view class="navbar" style='height:{{navHeight}}px'>
+<view class="navbar" style='height:{{navHeight + 2}}px'>
   <view>
-    <view wx:if="{{type == 'home'}}" class="navbar-action-wrap navbar-action-group" style='top:{{navTop +2}}px'>
+    <view wx:if="{{type == 'home'}}" class="navbar-action-wrap navbar-action-group" style='top:{{(navTop +2)*2}}rpx'>
       <text class="iconfont icon-xiangzuojiantou iconBack" bindtap="navBack"></text>
       <text class="iconfont icon-homefill iconHome" bindtap="toFind"></text>
     </view>
-    <view wx:elif="{{type == 'search'}}" class="search-wrap" style="top: {{navTop + 2}}px">
+    <view wx:elif="{{type == 'search'}}" class="search-wrap" style="top: {{(navTop + 2)*2}}rpx">
       <text class="iconfont icon-sousuo"></text>
       <text class="text">热搜：{{hotSearchWords}}</text>
     </view>
