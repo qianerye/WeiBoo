@@ -5,7 +5,7 @@
     "pages/release/release",
     "pages/message/message",
     "pages/profile/profile",
-		"pages/detail/detail"
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
