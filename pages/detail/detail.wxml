@@ -1,2 +1,7 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view class='detail-wrap'>
+	<custom-nav />
+	<view style="height:3000px;background:red;">
+		<text class="iconfont icon-xiangzuojiantou"></text>
+	</view>
+</view>
