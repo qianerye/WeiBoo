@@ -1,2 +1,6 @@
-<!--pages/profile/profile.wxml-->
-<text>我的</text>
+<view class="header-box">
+  <view class="left-box">
+    <view class=""></view>
+  </view>
+  <view class="right-box"></view>
+</view>

@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/profile/profile",
     "pages/follow/follow",
     "pages/find/find",
     "pages/release/release",
-    "pages/message/message",
-    "pages/profile/profile"
+    "pages/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
