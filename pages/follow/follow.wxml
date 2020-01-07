@@ -1,2 +1,3 @@
 <!--pages/follow/follow.wxml-->
-<text>关注</text>
+<bar-navigation type="search"></bar-navigation>
+<view>关注</view>

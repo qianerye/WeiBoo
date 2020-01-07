@@ -1,6 +1,1 @@
-<view class="header-box">
-  <view class="left-box">
-    <view class=""></view>
-  </view>
-  <view class="right-box"></view>
-</view>
+<bar-navigation barText=''></bar-navigation>
