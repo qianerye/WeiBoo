@@ -1,2 +1,2 @@
-<!--pages/message/message.wxml-->
+<bar-navigation barText='消息箱'></bar-navigation>
 <text>消息</text>

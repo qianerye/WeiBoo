@@ -1,2 +1,2 @@
-<!--pages/release/release.wxml-->
+<bar-navigation type="home" barText='发微博'></bar-navigation>
 <text>发布</text>
