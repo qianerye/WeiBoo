@@ -1,2 +1,13 @@
-<bar-navigation type="search"></bar-navigation>
-<text>发现</text>
+<view class="find-container">
+  <view class="hearder">
+    <bar-navigation type="search"></bar-navigation>
+    <scroll-view scroll-x="true" class="nav-container">
+      <view wx:for="{{navList}}" wx:key="*this" class="li {{index == navIndex ? 'active' : ''}}" bindtap="handleItemClick" data-index="{{index}}">{{item}}</view>
+    </scroll-view>
+  </view>
+	<view class="content-box">
+    <scroll-view style="height : {{contentHeight}}px" scroll-y="true">
+      <weiboo-article></weiboo-article>
+		</scroll-view>
+	</view>
+</view>
