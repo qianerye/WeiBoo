@@ -1,3 +1,17 @@
 <view class="weibo-item">
-
+  <view class="weibo-user">
+    <view class="user-img">
+      <image src="{{card.user.profile_image_url}}"></image>
+    </view>
+    <view class="user-name">
+      <view>{{card.user.name}}</view>
+      <view>{{card.created_at}}{{card.source ? card.source :''}}</view>
+    </view>
+    <view class="user-follow">
+    </view>
+  </view>
+  <view class="weibo-text"></view>
+  <view class="weibo-imgs"></view>
+  <view class="weibo-video"></view>
+  <view class="weibo-interaction"></view>
 </view>
