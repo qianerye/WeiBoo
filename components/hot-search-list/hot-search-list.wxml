@@ -1,12 +1,14 @@
-
 <scroll-view class='scrollview' scroll-y="{{true}}" style="height:{{selectHeight}}px">
-  <view>
-    <text class="iconfont icon-shenglvehao"></text>
-    <text>实时热点,  每分钟更新一次</text>  
+  <view class="search-item" >
+    <!--  class="iconfont  icon-upload-  " -->
+    <text ></text>
+    <text class="search-title  search1 ">{{searchData.title}}</text>  
   </view>
-  <view>
-    <text>1</text>
-    <text>国宾护卫队雪天训练</text>
-    <text>123</text>
-  </view>
+   <view class="search-item"   wx:for="{{searchData.card_group}}">
+     <cover-image class='cover-image' wx:if="{{index==0}}" src="{{item.pic}}"></cover-image>
+    <text  wx:elif="{{index>0}}" class="search-no">{{index}}</text>
+    <text class="search-title">{{item.desc}}</text>
+    <text class="search-account">{{item.desc_extr}}</text>
+  </view>    
+    
 </scroll-view>

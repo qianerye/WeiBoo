@@ -3,3 +3,31 @@
 .scrollview{
   background-color: #fff;
 }
+.search-item{
+  height: 55px;
+  border-bottom: 1rpx solid #ccc; 
+  display: flex;
+  width: 100%; 
+  align-items: center;
+}
+.cover-image {
+  padding: 0 20px 0 20px;
+  width: 20px;
+  height: 20px;
+}
+.search-no{
+padding: 0 20px 0 20px;
+width: 20px;
+text-align: center;
+color: #FF9426;
+}
+.search1{
+  padding: 0 0 0 20px;
+}
+.search-title{
+  flex:1;
+}
+.search-account{
+  padding: 0 20px 0 0;
+}
+

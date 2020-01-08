@@ -1,12 +1,12 @@
 {
-  "pages": [
-    "pages/searchlist/searchlist",
+  "pages": [    
     "pages/follow/follow",
     "pages/find/find",
     "pages/release/release",
     "pages/message/message",
     "pages/profile/profile",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/searchlist/searchlist"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,8 +14,7 @@
     "navigationBarTextStyle": "black"
   },
   "usingComponents" : {
-    "bar-navigation" : "/components/bar-navigation/bar-navigation",
-    "weiboo-article" : "/components/weiboo-article/weiboo-article"
+    "bar-navigation" : "/components/bar-navigation/bar-navigation"
   },
   "tabBar": {
     "selectedColor" : "#000",
