@@ -78,6 +78,7 @@
 }
 .icon-upload-:before {
   content:"\e6fb";
+  color: #F26D5F;
 }
 .icon-youjiantou1:before {
   content:"\e618";
