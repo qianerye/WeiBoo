@@ -1,7 +1,8 @@
 <!--pages/detail/detail.wxml-->
 <view class='detail-wrap'>
 	<custom-nav />
-	<view style="height:3000px;background:red;">
-		<text class="iconfont icon-xiangzuojiantou"></text>
-	</view>
+	<view style="height:600px;background:red;"></view>
+	<text class="iconfont icon-xiangzuojiantou">123</text>
+	<detail-comment />
+	<interact-tool />
 </view>
