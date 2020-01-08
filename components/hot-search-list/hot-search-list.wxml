@@ -1,0 +1,12 @@
+
+<scroll-view class='scrollview' scroll-y="{{true}}" style="height:{{selectHeight}}px">
+  <view>
+    <text class="iconfont icon-shenglvehao"></text>
+    <text>实时热点,  每分钟更新一次</text>  
+  </view>
+  <view>
+    <text>1</text>
+    <text>国宾护卫队雪天训练</text>
+    <text>123</text>
+  </view>
+</scroll-view>

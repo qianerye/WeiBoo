@@ -1,0 +1,5 @@
+/* components/hot-search-list/hot-search-list.wxss */
+@import '../../icons/icon.wxss';
+.scrollview{
+  background-color: #fff;
+}

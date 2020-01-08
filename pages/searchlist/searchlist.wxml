@@ -1,0 +1,3 @@
+<!--pages/searchlist/searchlist.wxml-->
+<bar-navigation type='search'></bar-navigation>
+<search-list></search-list>
