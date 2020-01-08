@@ -1,1 +1,44 @@
 /* pages/find/find.wxss */
+.find-container{
+  width: 100%;
+  height: 100%;
+}
+.hearder{
+  position: fixed;
+  top: 0;
+}
+
+.content-box{
+  position: relative;
+  top: 112px;
+}
+
+.nav-container{
+  height:100rpx;
+  background-color: #fff;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.nav-container .li{
+  display: inline-block;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  font-weight: 400;
+  padding: 0 30rpx;
+  color: #BBC2C7;
+}
+.nav-container .active{
+  color : #000;
+  position: relative;
+}
+.nav-container .active::after{
+  content : '';
+  border-bottom: 2px solid #000;
+  width: 40rpx;
+  position : absolute;
+  left: 50%;
+  bottom : 10rpx;
+  margin-left: -20rpx;
+
+}
