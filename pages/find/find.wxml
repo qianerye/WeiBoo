@@ -1,13 +1,17 @@
 <view class="find-container">
   <view class="hearder">
     <bar-navigation type="search"></bar-navigation>
-    <scroll-view scroll-x="true" class="nav-container">
-      <view wx:for="{{navList}}" wx:key="*this" class="li {{index == navIndex ? 'active' : ''}}" bindtap="handleItemClick" data-index="{{index}}">{{item}}</view>
+    <scroll-view scroll-x="true" class="nav-container" scroll-left='{{scrollLeft}}' bindscroll="scrollMove">
+      <view wx:for="{{navList}}" wx:key="*this" class="li {{index == navIndex ? 'active' : ''}}" 
+      bindtap="handleItemClick" 
+      id="ele{{index}}"
+      data-index="{{index}}">{{item}}</view>
     </scroll-view>
   </view>
 	<view class="content-box">
     <scroll-view style="height : {{contentHeight}}px" scroll-y="true">
-      <weiboo-article wx:for="{{cards}}" wx:key="unique" card="{{item}}" type="aaa"></weiboo-article>
+      <hot-search-list   wx:if="{{navIndex==1}}"></hot-search-list>
+      <weiboo-article wx:for="{{cards}}" wx:if="{{navIndex!=1}}" wx:key="unique" card="{{item}}" type="aaa"></weiboo-article>
 		</scroll-view>
-	</view>
+	</view>  
 </view>
