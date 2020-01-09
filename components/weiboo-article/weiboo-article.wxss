@@ -1,3 +1,5 @@
+@import '../../icons/icon.wxss';
+
 .weibo-item{
   margin-bottom: 20rpx;
   background-color: #fff;
@@ -7,10 +9,43 @@
 .weibo-user{
   display: flex;
   padding: 30rpx;
+  align-items: center;
 }
 .weibo-user image{
-  width: 110rpx;
-  height : 110rpx;
+  width: 80rpx;
+  height : 80rpx;
   border-radius: 50%;
   margin-right: 20rpx;
+}
+.user-name{
+  padding-top: 4rpx;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.user-name .created-time{
+  margin-top: 4rpx;
+  color: #888;
+  font-size: 26rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.user-follow{
+  color: #1B9AF3;
+  padding: 10rpx 30rpx;
+  height: 30rpx;
+  border: 1px solid #1B9AF3;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  line-height: 30rpx;
+}
+.user-more{
+  padding-left: 20rpx;
+  font-size: 40rpx;
+}
+.weibo-text{
+  padding: 0 20rpx;
+  padding-bottom: 30rpx;
 }
