@@ -1,23 +1,28 @@
 // components/weiboo-article/weiboo-article.js
 Component({
-  /**
-   * 组件的属性列表
-   */
+
   properties: {
-
+    card : Object,
+    type:String
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
+  lifetimes :{
+    attached : function (){
+      let _card = this.data.card
+      // _card.created_at = new Date(_card.created_at).getDay()
+      // console.log(JSON.stringify(this.data.card))
+      
+    }
   },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+  methods :{
+    handleDetailClick(e){
+      wx.setStorageSync(
+        "card" , e.currentTarget.dataset.card
+      )
+      wx.navigateTo({
+        url: "/pages/detail/detail"
+      })
+      
+    }
   }
+
 })
