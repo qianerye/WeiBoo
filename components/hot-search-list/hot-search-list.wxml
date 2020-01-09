@@ -1,0 +1,14 @@
+<scroll-view class='scrollview' scroll-y="{{true}}" style="height:{{selectHeight}}px">
+  <view class="search-item" >
+    <!--  class="iconfont  icon-upload-  " -->
+    <text ></text>
+    <text class="search-title  search1 ">{{searchData.title}}</text>  
+  </view>
+   <view class="search-item"   wx:for="{{searchData.card_group}}">
+     <cover-image class='cover-image' wx:if="{{index==0}}" src="{{item.pic}}"></cover-image>
+    <text  wx:elif="{{index>0}}" class="search-no">{{index}}</text>
+    <text class="search-title">{{item.desc}}</text>
+    <text class="search-account">{{item.desc_extr}}</text>
+  </view>    
+    
+</scroll-view>

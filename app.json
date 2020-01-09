@@ -1,11 +1,12 @@
 {
-  "pages": [
-    "pages/find/find",
+  "pages": [    
     "pages/follow/follow",
+    "pages/find/find",
     "pages/release/release",
     "pages/message/message",
     "pages/profile/profile",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/searchlist/searchlist"
   ],
   "window": {
     "backgroundTextStyle": "light",

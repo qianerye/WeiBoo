@@ -1,4 +1,4 @@
-<view class="weibo-item">
+<view class="weibo-item" bindtap="handleDetailClick" data-card="{{card}}">
   <view class="weibo-user">
     <view class="user-img">
       <image src="{{card.user.profile_image_url}}"></image>

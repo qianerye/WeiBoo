@@ -1,0 +1,9 @@
+<!--components/detail-interact-tool/detail-interact-tool.wxml-->
+<view class="interact-tool-seat">
+	<view class="interact-tool-wrap">
+		<input class="tool-input" placeholder="给TA评论"></input>
+		<text class="iconfont icon-dianzan"></text>
+		<text class="iconfont icon-pinglun"></text>
+		<text class="iconfont icon-fenxiang"></text>
+	</view>
+</view>
