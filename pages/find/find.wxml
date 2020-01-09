@@ -7,7 +7,7 @@
   </view>
 	<view class="content-box">
     <scroll-view style="height : {{contentHeight}}px" scroll-y="true">
-      <weiboo-article></weiboo-article>
+      <weiboo-article wx:for="{{cards}}" wx:key="unique" card="{{item}}" type="aaa"></weiboo-article>
 		</scroll-view>
 	</view>
 </view>
