@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-		"custom-nav": "/components/detail-custom-nav/detail-custom-nav"
+		"custom-nav": "/components/detail-custom-nav/detail-custom-nav",
+		"interact-tool": "/components/detail-interact-tool/detail-interact-tool",
+		"detail-comment": "/components/detail-comment/detail-comment"
 	},
 	"navigationStyle": "custom",
 	"navigationBarTextStyle": "black"

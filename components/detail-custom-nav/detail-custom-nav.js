@@ -19,7 +19,7 @@ Component({
 			});
 
 			let menuButtonInfo = wx.getMenuButtonBoundingClientRect();
-			console.log(systemInfo,menuButtonInfo);
+			// console.log(systemInfo,menuButtonInfo);
 			this.setData({
 				navTop: systemInfo.statusBarHeight,
 				navHeight: menuButtonInfo.height + (menuButtonInfo.top - systemInfo.statusBarHeight) * 2,

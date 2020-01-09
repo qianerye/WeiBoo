@@ -4,7 +4,7 @@
     <text ></text>
     <text class="search-title  search1 ">{{searchData.title}}</text>  
   </view>
-   <view class="search-item"   wx:for="{{searchData.card_group}}">
+   <view class="search-item"   wx:for="{{searchData.card_group}}"  wx:key="*this" data-index="{{index}}">
      <cover-image class='cover-image' wx:if="{{index==0}}" src="{{item.pic}}"></cover-image>
     <text  wx:elif="{{index>0}}" class="search-no">{{index}}</text>
     <text class="search-title">{{item.desc}}</text>
