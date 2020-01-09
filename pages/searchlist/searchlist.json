@@ -1,5 +1,4 @@
 {
   "usingComponents": {
-    "search-list":"../../components/hot-search-list/hot-search-list"
   }
 }

@@ -49,3 +49,22 @@
   padding: 0 20rpx;
   padding-bottom: 30rpx;
 }
+.weibo-imgs {
+  width: 100%;
+}
+.img-item{
+  width: 33.33%;
+  font-size: 0;
+  height : 0;
+  line-height: 0;
+  padding-bottom: 33.33%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+} 
+.img-item image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
