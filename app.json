@@ -1,23 +1,23 @@
 {
   "pages": [
+    "pages/profile/profile",
     "pages/follow/follow",
     "pages/find/find",
     "pages/release/release",
     "pages/message/message",
-    "pages/profile/profile"
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "black"
   },
-  "usingComponents" : {
-    "bar-navigation" : "/components/bar-navigation/bar-navigation"
+  "usingComponents": {
+    "bar-navigation": "/components/bar-navigation/bar-navigation"
   },
   "tabBar": {
-    "selectedColor" : "#000",
-    "list": [
-      {
+    "selectedColor": "#000",
+    "list": [{
         "pagePath": "pages/follow/follow",
         "text": "关注",
         "iconPath": "/icons/home.png",

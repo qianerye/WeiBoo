@@ -1,8 +1,8 @@
 <bar-navigation barText='消息箱'></bar-navigation>
 <view class="warp-box">
 	<view class="item-box">
-		<view class="icon-box">
-			<text class="iconfont icon-QQ icon-left"></text>
+		<view class="icon-box icon-one">
+			<text class=" icon-left">@</text>
 		</view>
 		<view class="txt-box">
 			<text class="item-txt">@我的</text>
@@ -11,8 +11,8 @@
 	</view>
 
 	<view class="item-box">
-		<view class="icon-box">
-			<text class="iconfont icon-QQ icon-left"></text>
+		<view class="icon-box icon-two">
+			<text class="iconfont icon-pinglun1 icon-left"></text>
 		</view>
 		<view class="txt-box">
 			<text class="item-txt">评论</text>
@@ -21,8 +21,8 @@
 	</view>
 
   <view class="item-box">
-		<view class="icon-box">
-			<text class="iconfont icon-QQ icon-left"></text>
+		<view class="icon-box icon-three">
+			<text class="iconfont icon-zan icon-left"></text>
 		</view>
 		<view class="txt-box">
 			<text class="item-txt">赞</text>
@@ -31,8 +31,8 @@
 	</view>
 
   <view class="item-box">
-		<view class="icon-box">
-			<text class="iconfont icon-QQ icon-left"></text>
+		<view class="icon-box icon-four">
+			<text class="iconfont icon-fuwuerji icon-left"></text>
 		</view>
 		<view class="txt-box">
 			<text class="item-txt">微博管理员</text>

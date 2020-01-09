@@ -1,0 +1,24 @@
+<!--components/detail-custom-nav/detail-custom-nav.wxml-->
+<view style="height:{{navHeight + navTop}}px;">
+<view class="detail-custom-nav-wrap" style="height:{{navHeight}}px;padding-top:{{navTop}}px;">
+	<view class="detail-custom-nav" style="margin-right:{{navMarginRight}}px;">
+		<view 
+			class="detail-tool-left" 
+			style="width:{{menuButton.width}}px;height:{{menuButton.height}}px;margin-left:{{navMarginLeft}}px;border-radius:{{menuButton.height/2}}px">
+			<view class="left-back" style="line-height:{{menuButton.height}}px;">
+				<text class="iconfont icon-xiangzuojiantou"></text>
+			</view>
+			<view class="center-line"></view>
+			<view class="right-home" style="line-height:{{menuButton.height}}px;">
+				<text class="iconfont icon-home"></text>
+			</view>
+		</view>
+		<view
+			class="detail-tool-right"
+			style="height:{{menuButton.height}}px;margin-left:{{navMarginLeft}}px">
+			<input disabled placeholder="热搜:balabalabala" style="border-radius:{{menuButton.height / 2}}px"></input>
+			<text class="iconfont icon-sousuo"></text>
+		</view>
+	</view>
+</view>
+</view>
