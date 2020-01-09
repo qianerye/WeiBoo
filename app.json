@@ -14,7 +14,8 @@
     "navigationBarTextStyle": "black"
   },
   "usingComponents" : {
-    "bar-navigation" : "/components/bar-navigation/bar-navigation"
+    "bar-navigation" : "/components/bar-navigation/bar-navigation",
+    "weiboo-article" : "components/weiboo-article/weiboo-article"
   },
   "tabBar": {
     "selectedColor" : "#000",
