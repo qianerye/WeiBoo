@@ -1,66 +1,33 @@
-// pages/detail/detail.js
 Page({
 
-	/**
-	 * 页面的初始数据
-	 */
 	data: {
-		card: null
+		cardInfo: null,
+		cardCommnent: null,
+		cardTrend: null
 	},
 
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
 	onLoad: function (options) {
-	
-	},
-
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady: function () {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow: function () {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide: function () {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload: function () {
-
-	},
-
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh: function () {
-
-	},
-
-	/**
-	 * 页面上拉触底事件的处理函数
-	 */
-	onReachBottom: function () {
-
-	},
-
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage: function () {
-
+		let card = wx.getStorageSync('card');
+		let cardId = card.id;
+		wx.request({
+			url: `https://api.weibo.cn/2/comments/build_comments?new_version=0&max_id=0&is_show_bulletin=2&c=weixinminiprogram&s=92caf721&id=${cardId}&wm=90163_90001&v_f=2&v_p=60&from=1885396040&gsid=_2A_p8JoUDCoX0kygqlQXYSVII2sPlPcwqaaPJzmFeEtLG8oFeQ7UvWFSEYRw0nE_47jKzB0qp2abTIjLVPiMyniOd&uid=5959130517&count=20&isGetLongText=1&fetch_level=0&max_id_type=0&lfid=102803_ctg1_4488_-_ctg1_4488`,
+			method: 'GET',
+			success: result => {
+				this.setData({
+					cardInfo: card,
+					cardCommnent: result.data
+				})
+			}
+		});
+		wx.request({
+			url: `https://api.weibo.cn/2/statuses/extend?gsid=_2A_p8JoUDCoX0kygqlQXYSVII2sPlPcwqaaPJzmFeEtLG8oFeQ7UvWFSEYRw0nE_47jKzB0qp2abTIjLVPiMyniOd&uid=5959130517&wm=90163_90001&from=1885396040&c=weixinminiprogram&s=92caf721&id=4456673508669036&mid=${card.id}&recommend_scene=136,137,141,152&count=20&lfid=102803_ctg1_4488_-_ctg1_4488`,
+			method: 'GET',
+			success: result => {
+				this.setData({
+					cardTrend: result.data.trend.feeds
+				})
+			}
+		})
 	}
+
 })

@@ -1,0 +1,19 @@
+<!--components/detail-trend/detail-trend.wxml-->
+<view class="detail-trend-wrap">
+	<view class="detail-trend-title">
+		<text>大家都在看</text>
+	</view>
+
+	<view class="trend-content">
+		<view class="left-trend">
+			<view class="trend-item" wx:for="{{leftTrend}}" wx:key="unique">
+				<image class="trend-img" mode="widthFix" src="{{item.src}}"></image>
+			</view>
+		</view>
+		<view class="right-trend">
+			<view class="trend-item" wx:for="{{rightTrend}}" wx:key="unique">
+				<image class="trend-img" mode="widthFix" src="{{item.src}}"></image>
+			</view>
+		</view>
+	</view>
+</view>

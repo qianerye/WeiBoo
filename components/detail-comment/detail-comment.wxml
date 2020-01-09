@@ -1,4 +1,32 @@
 <!--components/detail-comment/detail-comment.wxml-->
 <view class="detail-comment">
-	<text>comment</text>
+	<view class="comment-user">
+		<text class="comment-zf">转发 {{repostCount}}</text>
+		<text class="comment-pl">评论 {{commentsCount}}</text>
+		<text class="comment-zan">赞 {{attitudesCount}}</text>
+		<text class="comment-ts iconfont icon-fuwuerji"> 投诉</text>
+	</view>
+
+	<view class="comment-main" wx:if="{{rootComment}}">
+		<view class="user-head" style="background-image:url({{rootComment.user.avatar_hd}})"></view>
+		<view class="comment-content">
+			<view class="user-name">{{rootComment.user.name}}</view>
+			<view class="user-text">{{rootComment.text}}</view>
+		</view>
+		<view class="comment-tool">
+			<text class="comment-created">{{commentCreatedAt}}</text>
+			<text class="comment-button">
+				<text class="iconfont icon-zhuanfa"></text>
+				<text class="iconfont icon-pinglun1"></text>
+				<text class="iconfont icon-zan"> 
+					<text class="like-counts">{{rootComment.like_counts}}</text>
+				</text>
+			</text>
+		</view>
+	</view>
+
+	<view class="comment-more" wx:if="{{rootComment}}">
+		查看更多评论<text class="more-num"> {{rootComment.total_number}}条</text>
+	</view>
+
 </view>

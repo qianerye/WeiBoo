@@ -1,7 +1,7 @@
 {
-  "pages": [ 
-    "pages/follow/follow",   
-    "pages/find/find",   
+  "pages":[
+    "pages/follow/follow",
+    "pages/find/find",
     "pages/release/release",
     "pages/message/message",
     "pages/profile/profile",

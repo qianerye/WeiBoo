@@ -1,0 +1,13 @@
+/* components/detail-loading/detail-loading.wxss */
+.detail-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	display: block;
+	padding: 6rpx 32rpx;
+	font-size: 50rpx;
+	background-color: #708090;
+	color: #fff; 
+	transform: translate(-50%, -50%);
+	border-radius: 8rpx;
+}
