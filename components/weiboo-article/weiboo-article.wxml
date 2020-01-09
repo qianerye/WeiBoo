@@ -5,13 +5,23 @@
     </view>
     <view class="user-name">
       <view>{{card.user.name}}</view>
-      <view>{{card.created_at}}{{card.source ? card.source :''}}</view>
+      <view class="created-time">{{card.created_at}}{{card.source ? "  来自 "+card.source :''}}</view>
     </view>
     <view class="user-follow">
+      关注
+    </view>
+    <view class="user-more">
+      <text class="iconfont icon-more"></text>
     </view>
   </view>
-  <view class="weibo-text"></view>
-  <view class="weibo-imgs"></view>
+  <view wx:if="{{card.text}}" class="weibo-text">
+    {{card.text}}
+  </view>
+  <view wx:if="{{card.pic_num > 0}}" class="weibo-imgs">
+    <view class="img-item" wx:for="{{card.images}}" wx:key="unique">
+      <image src="{{item.large.url}}"></image>
+    </view>
+  </view>
   <view class="weibo-video"></view>
   <view class="weibo-interaction"></view>
 </view>
