@@ -7,6 +7,7 @@
 			repost-count="{{cardInfo.reposts_count}}"
 			comments-count="{{cardInfo.comments_count}}"
 			attitudes-count="{{cardInfo.attitudes_count}}" />
+		<detail-recommend recommend-user="{{recommendUser}}" wx:if="{{recommendUser.length > 0}}" />
 		<detail-trend trend="{{cardTrend}}" wx:if="{{cardTrend.length > 0}}" />
 		<interact-tool />
 	</view>

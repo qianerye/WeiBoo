@@ -1,0 +1,57 @@
+/* components/detail-recommend/detail-recommend.wxss */
+.detail-recommend-wrap {
+	margin-bottom: 5px;
+	background-color: #fff;
+	padding: 10px 10px 15px;
+	position: relative;
+}
+
+.detail-recommend-wrap::before {
+	content: "";
+	display: block;
+	background-color: #1b9af4;
+	width: 2px;
+	height: 60rpx;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.detail-recommend-wrap .detail-recommend-title {
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 34rpx;
+	color: #3c3b3b;
+	margin-bottom: 7px;
+	overflow: hidden;
+}
+
+.detail-recommend-user .scroll-wrap {
+	white-space: nowrap;
+}
+
+.detail-recommend-user .scroll-item {
+	display: inline-block;
+	margin-right: 15px;
+	width: 140rpx;
+}
+
+.scroll-item .item-img {
+	width: 140rpx;
+	height: 140rpx;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.scroll-item .item-name {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-size: 24rpx;
+	margin-top: 3px;
+}

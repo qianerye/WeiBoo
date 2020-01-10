@@ -1,0 +1,12 @@
+<!--components/detail-recommend/detail-recommend.wxml-->
+<view class="detail-recommend-wrap">
+	<view class="detail-recommend-title">你可能感兴趣的博主</view>
+	<scroll-view class="detail-recommend-user" scroll-x>
+		<view class="scroll-wrap">
+			<view class="scroll-item" wx:for="{{recommendUser}}" wx:key="unique">
+				<view class="item-img" style="background-image:url({{item.avatar_hd}})"></view>
+				<view class="item-name">{{item.name}}</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

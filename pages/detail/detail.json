@@ -4,6 +4,7 @@
 		"interact-tool": "/components/detail-interact-tool/detail-interact-tool",
 		"detail-loading": "/components/detail-loading/detail-loading",
 		"detail-comment": "/components/detail-comment/detail-comment",
+		"detail-recommend": "/components/detail-recommend/detail-recommend",
 		"detail-trend": "/components/detail-trend/detail-trend"
 	},
 	"navigationStyle": "custom",
