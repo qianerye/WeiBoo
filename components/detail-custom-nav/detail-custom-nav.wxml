@@ -5,11 +5,11 @@
 		<view 
 			class="detail-tool-left" 
 			style="width:{{menuButton.width}}px;height:{{menuButton.height}}px;margin-left:{{navMarginLeft}}px;border-radius:{{menuButton.height/2}}px">
-			<view class="left-back" style="line-height:{{menuButton.height}}px;">
+			<view bindtap="goBack" class="left-back" style="line-height:{{menuButton.height}}px;">
 				<text class="iconfont icon-xiangzuojiantou"></text>
 			</view>
 			<view class="center-line"></view>
-			<view class="right-home" style="line-height:{{menuButton.height}}px;">
+			<view bindtap="goHome" class="right-home" style="line-height:{{menuButton.height}}px;">
 				<text class="iconfont icon-home"></text>
 			</view>
 		</view>

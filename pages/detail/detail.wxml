@@ -1,6 +1,7 @@
 <!--pages/detail/detail.wxml-->
 <view class='detail-wrap'>
 	<custom-nav />
+	<detail-info />
 	<view class="detail-main" wx:if="{{cardCommnent}}">
 		<detail-comment 
 			root-comment="{{cardCommnent.root_comments[0]}}"

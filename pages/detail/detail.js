@@ -29,10 +29,10 @@ Page({
 						cardTrend: result.data.trend.feeds,
 						recommendUser: result.data.wechat_recommend['141'].users
 					});
-					// console.log(result, this.data)
+					// console.log(this.data)
 				}
 			}
-		})
+		});
 	}
 
 })

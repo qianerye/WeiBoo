@@ -6,9 +6,9 @@ Component({
 	},
 
 	lifetimes: {
-		attached: function() {
-			console.log(this.properties.recommendUser)
-		}
+		// attached: function() {
+		// 	console.log(this.properties.recommendUser)
+		// }
 	}
 
 })

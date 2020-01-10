@@ -1,0 +1,26 @@
+<!--components/detail-info/detail-info.wxml-->
+<view class="detail-info-wrap">
+	<view class="info-user">
+		<view class="user-head" style="background-image: url({{cardInfo.user.avatar_hd}})"></view>
+		<view class="user-name">
+			<text class="name">{{cardInfo.user.name}}</text>
+			<text class="time">{{cardInfo.created_at}} 来自 {{cardInfo.source}}</text>
+		</view>
+		<view class="guanzhu-user">
+			<text class="gz">关注</text>
+		</view>
+		<view class="more-menu">
+			<text class="iconfont icon-gengduo"></text>
+		</view>
+	</view>
+
+	<view class="info">
+		<view class="info-text">{{cardInfo.text}}</view>
+	</view>
+
+	<view class="info-img" wx:if="{{cardInfo.images.length > 0}}">
+		<view wx:for="{{cardInfo.images}}" wx:key="unique">
+			<image mode="widthFix" style="width:100%;margin-bottom:3px;" src="{{item.bmiddle.url}}"></image>
+		</view>
+	</view>
+</view>

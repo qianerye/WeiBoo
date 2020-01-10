@@ -33,6 +33,22 @@ Component({
 				}
 			});
 		}
+	},
+
+	methods: {
+		goBack: e => {
+			// console.log(e);
+			wx.navigateBack({
+				delta: 1
+			})
+		},
+
+		goHome: e => {
+			// console.log(e);
+			wx.reLaunch({
+				url: '/pages/find/find',
+			})
+		}
 	}
 
 })
