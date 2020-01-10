@@ -22,7 +22,7 @@ Page({
         that.setData({
           cards: result.data.cards
         })    
-        console.log(that.data.cards);    
+        // console.log(that.data.cards);    
       }      
     })
  

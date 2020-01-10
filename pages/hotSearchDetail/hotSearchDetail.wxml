@@ -9,8 +9,7 @@
  <view>
    <view wx:for="{{cards}}" wx:key="unique">
      <view wx:for="{{item.card_group}}" wx:key="unique">
-       <view wx:if="{{item.card_type==9}}">
-         {{item.card_type}}         
+       <view wx:if="{{item.card_type==9}}">            
          <weiboo-article card="{{item.mblog}}" type="aaa"></weiboo-article>
        </view>
       

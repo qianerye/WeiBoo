@@ -2,7 +2,7 @@
   <view class="hearder">
     <bar-navigation type="search"></bar-navigation>
     <scroll-view scroll-x="true" class="nav-container" scroll-left='{{scrollLeft}}' bindscroll="scrollMove">
-      <view wx:for="{{navList}}" wx:key="*this" class="li {{index == navIndex ? 'active' : ''}}" 
+      <view wx:for="{{navList}}" wx:key="unique" class="li {{index == navIndex ? 'active' : ''}}" 
       bindtap="handleItemClick" 
       id="ele{{index}}"
       data-index="{{index}}">{{item}}</view>

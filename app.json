@@ -1,7 +1,7 @@
 {
   "pages": [ 
-    "pages/searchlist/searchlist",
-    "pages/find/find", 
+    "pages/find/find",
+    "pages/searchlist/searchlist",    
     "pages/hotSearchDetail/hotSearchDetail",
     "pages/follow/follow",   
     "pages/release/release",

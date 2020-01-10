@@ -1,0 +1,112 @@
+/* components/detail-trend/detail-trend.wxss */
+
+@import '/icons/icon.wxss';
+
+.detail-trend-wrap {
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: transparent;
+	position: relative;
+}
+
+.detail-trend-wrap::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #1b9af4;
+	width: 2px;
+	height: 60rpx;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.detail-trend-wrap .detail-trend-title {
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 34rpx;
+	color: #3c3b3b;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.detail-trend-wrap .trend-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-trend, .right-trend {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	width: calc((100% - 10px) / 2);
+	overflow: hidden;
+}
+
+.left-trend {
+	float: left;
+}
+
+.right-trend {
+	float: right;
+	margin-left: 10px;
+}
+
+.trend-item {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.trend-item .trend-img {
+	width: 100%;
+	margin: none;
+}
+
+.trend-item .trend-info {
+	padding: 0 5px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.trend-info .trend-title {
+	font-size: 36rpx;
+	height: 80rpx;
+	line-height: 40rpx;
+	overflow: hidden;
+}
+
+.trend-info .trend-tool {
+	display: flex;
+	padding: 7px 0;
+	height: 40rpx;
+	align-items: center;
+}
+
+.trend-tool .user-head {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+
+.trend-tool .user-name {
+	flex-grow: 1;
+	font-size: 28rpx;
+	color: #a9a9a9;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.trend-tool .iconfont {
+	font-size: 32rpx;
+	color: #3c3b3b;
+}
+
+.trend-tool .zan-count {
+	font-size: 28rpx;
+	color: #3c3b3b;
+	margin-left: 2px;
+}
