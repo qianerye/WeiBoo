@@ -60,6 +60,9 @@ Page({
           url: 'https://api.weibo.cn/2/cardlist?gsid=_2A_p_i4vZCoV0kysilgrYS1oO2cDlPcwqBqQTzmFeEtLG4IFeQ5JQWFSEbotX0iLAZIFlue5-f6UoAhMyMyUfXDlc&from=1885396040&c=weixinminiprogram&s=e3c1c084&containerid=231643_1&page=1',
           success: result => {
             console.log(result)
+            this.setData({
+              cards : result.data.cards
+            })
           },
           fail: error => {
             console.log(error.message)
