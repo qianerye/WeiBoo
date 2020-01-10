@@ -1,4 +1,4 @@
-<view class="weibo-item" bindtap="handleDetailClick" data-card="{{card}}">
+<view class="weibo-item">
   <view class="weibo-user">
     <view class="user-img">
       <image src="{{card.user.profile_image_url}}"></image>
@@ -14,14 +14,35 @@
       <text class="iconfont icon-more"></text>
     </view>
   </view>
-  <view wx:if="{{card.text}}" class="weibo-text">
+  <view wx:if="{{card.text}}"  class="weibo-text"  bindtap="handleDetailClick" data-card="{{card}}">
     {{card.text}}
   </view>
   <view wx:if="{{card.pic_num > 0}}" class="weibo-imgs">
-    <view class="img-item" wx:for="{{card.images}}" wx:key="unique">
-      <image src="{{item.large.url}}"></image>
+    <view class="img-item" style="{{card.pic_num == 4 ? 'width : 50%;padding-bottom: 50%' : ''}}" wx:for="{{card.images}}" wx:key="unique">
+        <view class="img-box">
+          <image mode="aspectFill" src="{{item.bmiddle.url}}"></image>
+        </view>
     </view>
   </view>
-  <view class="weibo-video"></view>
-  <view class="weibo-interaction"></view>
+  <view wx:if="{{card.obj_ext && card.page_info.media_info}}" class="weibo-video">
+  <video src="{{card.page_info.media_info.mp4_hd_url}}"></video>
+  </view>
+  <view class="weibo-interaction">
+    <view class="interaction-forward">
+      <text class="iconfont icon-fenxiang"></text>
+      <text>{{card.reposts_count}}</text>
+    </view>
+    <view class="interaction-comment">
+      <text class="iconfont icon-pinglun"></text>
+      <text>{{card.comments_count}}</text>
+    </view>
+    <view class="interaction-praise">
+      <text class="iconfont icon-zan"></text>
+      <text>{{card.attitudes_count}}</text>
+    </view>
+    <view class="interaction-share">
+      <text class="iconfont icon-fenxiang-1"></text>
+      <text>分享</text>
+    </view>
+  </view>
 </view>

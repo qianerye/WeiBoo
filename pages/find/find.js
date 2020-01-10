@@ -18,7 +18,8 @@ Page({
     let index = e.target.dataset.index
     let ele = 'ele' + e.target.dataset.index
     this.setData({
-      navIndex: index
+      navIndex: index,
+      cards : []
     })
     this.getRect("#"+ele)
     switch (index) {

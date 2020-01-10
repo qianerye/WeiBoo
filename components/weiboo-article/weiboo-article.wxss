@@ -1,30 +1,34 @@
 @import '../../icons/icon.wxss';
 
-.weibo-item{
+.weibo-item {
   margin-bottom: 20rpx;
   background-color: #fff;
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
 }
-.weibo-user{
+
+.weibo-user {
   display: flex;
   padding: 30rpx;
   align-items: center;
 }
-.weibo-user image{
+
+.weibo-user image {
   width: 80rpx;
-  height : 80rpx;
+  height: 80rpx;
   border-radius: 50%;
   margin-right: 20rpx;
 }
-.user-name{
+
+.user-name {
   padding-top: 4rpx;
   flex: 1;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.user-name .created-time{
+
+.user-name .created-time {
   margin-top: 4rpx;
   color: #888;
   font-size: 26rpx;
@@ -32,7 +36,8 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.user-follow{
+
+.user-follow {
   color: #1B9AF3;
   padding: 10rpx 30rpx;
   height: 30rpx;
@@ -41,30 +46,83 @@
   font-size: 28rpx;
   line-height: 30rpx;
 }
-.user-more{
+
+.user-more {
   padding-left: 20rpx;
   font-size: 40rpx;
 }
-.weibo-text{
+
+.weibo-text {
   padding: 0 20rpx;
   padding-bottom: 30rpx;
 }
+
 .weibo-imgs {
   width: 100%;
 }
-.img-item{
+
+.img-item {
   width: 33.33%;
   font-size: 0;
-  height : 0;
+  height: 0;
   line-height: 0;
   padding-bottom: 33.33%;
   display: inline-block;
   position: relative;
   overflow: hidden;
-} 
-.img-item image{
+  vertical-align: middle;
+}
+
+.img-item .img-box {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
+  box-sizing: border-box;
+  padding-left: 4rpx;
+  padding-right: 4rpx;
+  padding-top: 8rpx;
+}
+
+
+
+.img-item image {
+  width: 100%;
+  height: "auto";
   object-fit: cover;
+}
+
+.weibo-video {
+  width: 100%;
+}
+
+.weibo-video video {
+  width: 100%;
+}
+
+.weibo-interaction {
+  padding-top: 15rpx;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.weibo-interaction view {
+  padding-right: 30rpx;
+}
+
+.weibo-interaction .iconfont {
+  font-size: 46rpx;
+  padding-right: 10rpx;
+}
+
+.weibo-interaction .icon-fenxiang-1 {
+  font-size: 36rpx;
+}
+
+.interaction-praise {
+  flex: 1;
 }
