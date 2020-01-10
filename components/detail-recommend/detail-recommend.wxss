@@ -35,12 +35,12 @@
 .detail-recommend-user .scroll-item {
 	display: inline-block;
 	margin-right: 15px;
-	width: 140rpx;
+	width: 130rpx;
 }
 
 .scroll-item .item-img {
-	width: 140rpx;
-	height: 140rpx;
+	width: 130rpx;
+	height: 130rpx;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 50%;

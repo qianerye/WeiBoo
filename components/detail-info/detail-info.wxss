@@ -1,0 +1,86 @@
+/* components/detail-info/detail-info.wxss */
+@import "/icons/icon.wxss";
+
+.detail-info-wrap {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.info-user {
+	display: flex;
+	align-items: center;
+	height: 96rpx;
+	padding: 5px 10px;
+}
+
+.info-user .user-head {
+	width: 96rpx;
+	height: 96rpx;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	margin-right: 5px;
+}
+
+.info-user .user-name {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	overflow: hidden;
+}
+
+.info-user .user-name .name {
+	height: 50rpx;
+	line-height: 50rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	font-size: 34rpx;
+	color: #635f5f;
+}
+
+.info-user .user-name .time {
+	height: 46rpx;
+	line-height: 46rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	font-size: 28rpx;
+	color: #a9a9a9;
+} 
+
+.info-user .guanzhu-user {
+	text-align: center;
+	min-width: 90rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	padding: 0 20rpx;
+	border-radius: 45rpx;
+	border-color: #1b9af4;
+	border-style: solid;
+	border-width: 1px;
+	color: #1b9af4;
+	font-size: 28rpx;
+	margin-right: 5px;
+}
+
+.info-user .more-menu .iconfont {
+	font-size: 36rpx;
+}
+
+.info {
+	margin: 4px 0;
+	padding: 0 10px;
+}
+
+.info .info-text {
+	font-size: 36rpx;
+}
+
+.info .info-img {
+	margin: 4px 0;
+}
