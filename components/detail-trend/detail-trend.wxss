@@ -1,5 +1,7 @@
 /* components/detail-trend/detail-trend.wxss */
 
+@import '/icons/icon.wxss';
+
 .detail-trend-wrap {
 	padding: 10px;
 	margin-bottom: 5px;
@@ -54,9 +56,57 @@
 
 .trend-item {
 	width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .trend-item .trend-img {
 	width: 100%;
+	margin: none;
+}
+
+.trend-item .trend-info {
+	padding: 0 5px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.trend-info .trend-title {
+	font-size: 36rpx;
+	height: 80rpx;
+	line-height: 40rpx;
+	overflow: hidden;
+}
+
+.trend-info .trend-tool {
+	display: flex;
+	padding: 7px 0;
+	height: 40rpx;
+	align-items: center;
+}
+
+.trend-tool .user-head {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+
+.trend-tool .user-name {
+	flex-grow: 1;
+	font-size: 28rpx;
+	color: #a9a9a9;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.trend-tool .iconfont {
+	font-size: 32rpx;
+	color: #3c3b3b;
+}
+
+.trend-tool .zan-count {
+	font-size: 28rpx;
+	color: #3c3b3b;
+	margin-left: 2px;
 }

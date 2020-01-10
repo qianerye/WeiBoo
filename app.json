@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
   "pages": [    
     "pages/find/find",
     "pages/follow/follow",
-=======
-  "pages": [ 
-    "pages/follow/follow",   
-    "pages/find/find",   
->>>>>>> master
     "pages/release/release",
     "pages/message/message",
     "pages/profile/profile",
