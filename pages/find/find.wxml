@@ -11,7 +11,7 @@
 	<view class="content-box">
     <scroll-view style="height : {{contentHeight}}px" scroll-y="true">
       <hot-search-list   wx:if="{{navIndex==1}}"></hot-search-list>
-      <weiboo-article wx:for="{{cards}}" wx:if="{{navIndex!=1}}" wx:key="unique" card="{{item}}" type="aaa"></weiboo-article>
+      <weiboo-article wx:for="{{cards}}" wx:if="{{navIndex!=1}}" wx:key="unique" card="{{item}}" type="{{navIndex}}"></weiboo-article>
 		</scroll-view>
 	</view>  
 </view>
