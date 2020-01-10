@@ -1,3 +1,8 @@
 <!--pages/searchlist/searchlist.wxml-->
-<bar-navigation type='search'></bar-navigation>
+<bar-navigation  type="home" barText='热搜'></bar-navigation>
+<view class="hotsearchWrap">
+  <view class="iconfont icon-sousuo hotsearch-bar">
+    <input placeholder="我和我的祖国" placeholder-style="color:#BDBDBD;"></input>
+  </view>
+</view>
 <hot-search-list></hot-search-list>

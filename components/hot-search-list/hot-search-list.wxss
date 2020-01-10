@@ -26,8 +26,11 @@ color: #FF9426;
 }
 .search-title{
   flex:1;
+ 
+  overflow: hidden;
+  white-space: nowrap;
 }
 .search-account{
-  padding: 0 20px 0 0;
+  padding: 0 20px 0 20px;
 }
 

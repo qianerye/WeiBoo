@@ -1,0 +1,19 @@
+<bar-navigation type="home" barText='搜索结果'></bar-navigation>
+
+<view class="hotsearchWrap">
+  <view class="iconfont icon-sousuo hotsearch-bar">
+    <input  bindfocus="changeipt" value="{{keyword}}"></input>
+  </view>
+</view>
+
+ <view>
+   <view wx:for="{{cards}}" wx:key="unique">
+     <view wx:for="{{item.card_group}}" wx:key="unique">
+       <view wx:if="{{item.card_type==9}}">
+         {{item.card_type}}         
+         <weiboo-article card="{{item.mblog}}" type="aaa"></weiboo-article>
+       </view>
+      
+     </view>
+   </view>
+ </view>

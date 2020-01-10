@@ -7,6 +7,7 @@ Component({
   },
   lifetimes :{
     attached : function (){
+      console.log(this.data.card);
       let _card = this.data.card
       // _card.created_at = new Date(_card.created_at).getDay()
       // console.log(JSON.stringify(this.data.card))

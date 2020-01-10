@@ -24,15 +24,21 @@ Component({
           searchData: res.data.cards[0]
         })     
       }    
-    },    
+     },    
     )    
     let ht=wx.getSystemInfoSync()   
     this.setData({
       selectHeight:ht.windowHeight-60
     }) 
-
     }
   },
-
-  
+  methods: {
+    gosearchlist(e){ 
+      // console.log(e.currentTarget.dataset.keyword);   
+      let keyword = e.currentTarget.dataset.keyword
+      wx.navigateTo({
+        url: '/pages/hotSearchDetail/hotSearchDetail?keyword='+keyword     
+      })
+    }
+  },  
 })
