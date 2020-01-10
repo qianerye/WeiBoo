@@ -71,9 +71,10 @@
   height:100%;
   line-height: 88rpx;
   text-align: center;
+  display: flex;
 }
-.icon-aixin{
-  font-size:36rpx;
+.icon-star{
+  font-size:48rpx;
   color: #595e61;
   margin-left: 28rpx;
 }
@@ -186,5 +187,6 @@
 }
 .my-record-bottom-item-date{
   font-size:24rpx;
+  color:#6f6f6f
 }
 

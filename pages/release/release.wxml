@@ -1,2 +1,22 @@
 <bar-navigation type="home" barText='发微博'></bar-navigation>
-<text>发布</text>
+<view class="release-box">
+  <textarea 
+  class="release-text"
+  placeholder="分享新鲜事儿"
+  auto-focus="true"
+  placeholder-style="color:#d5d5d5;font-size:28rpx"
+  show-confirm-bar="true"
+  >
+  </textarea>
+  <view class="release-footer">
+    <view class="release-footer-left">
+      <text class="iconfont icon-biaoqing-copy"></text>
+    </view>
+    <view class="release-footer-right">
+      <text class="release-num">0</text>
+      <view class="release-btn">
+        <text>发送</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--components/detail-comment/detail-comment.wxml-->
+<view class="detail-comment">
+	<text>comment</text>
+</view>

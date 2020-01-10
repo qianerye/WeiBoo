@@ -28,7 +28,7 @@
 
 <view class="my-fabulous">
 	<view class="my-fabulous-left">
-		<text class="iconfont icon-aixin"></text>
+		<text class="iconfont icon-star"></text>
 		<text class="my-fabulous-left-txt">我的赞/收藏</text>
 	</view>
 	<view class="my-fabulous-right">
