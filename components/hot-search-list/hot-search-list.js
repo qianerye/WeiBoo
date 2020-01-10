@@ -3,19 +3,13 @@ Component({
   /**
    * 组件的属性列表
    */
-  properties: {
-    
+  properties: {    
   },
- 
 
-  /**
-   * 组件的初始数据
-   */
   data: {
     selectHeight:0,
     searchData: {}
-  },
- 
+  }, 
   lifetimes:{    
     attached: function () { 
     let that = this
@@ -28,27 +22,17 @@ Component({
         // console.log(res.data)
         that.setData({
           searchData: res.data.cards[0]
-        })
-        console.log(that.data.searchData);
-      }
-    
-    },
-    
-    )
-    
-    let ht=wx.getSystemInfoSync()
-    console.log(ht.windowHeight)
+        })     
+      }    
+    },    
+    )    
+    let ht=wx.getSystemInfoSync()   
     this.setData({
       selectHeight:ht.windowHeight-60
-    })   
+    }) 
 
     }
   },
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {      
-
-  }
+  
 })

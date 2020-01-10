@@ -1,8 +1,15 @@
 <!--pages/detail/detail.wxml-->
 <view class='detail-wrap'>
 	<custom-nav />
-	<view style="height:600px;background:red;"></view>
-	<text class="iconfont icon-xiangzuojiantou">123</text>
-	<detail-comment />
-	<interact-tool />
+	<view class="detail-main" wx:if="{{cardCommnent}}">
+		<detail-comment 
+			root-comment="{{cardCommnent.root_comments[0]}}"
+			repost-count="{{cardInfo.reposts_count}}"
+			comments-count="{{cardInfo.comments_count}}"
+			attitudes-count="{{cardInfo.attitudes_count}}" />
+		<detail-recommend recommend-user="{{recommendUser}}" wx:if="{{recommendUser.length > 0}}" />
+		<detail-trend trend="{{cardTrend}}" wx:if="{{cardTrend.length > 0}}" />
+		<interact-tool />
+	</view>
+	<detail-loading wx:else/>
 </view>

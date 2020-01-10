@@ -1,23 +1,29 @@
 // components/detail-comment/detail-comment.js
 Component({
-	/**
-	 * 组件的属性列表
-	 */
+
 	properties: {
-
+		rootComment: Object,
+		repostCount: Number,
+		commentsCount: Number,
+		attitudesCount: Number
 	},
 
-	/**
-	 * 组件的初始数据
-	 */
 	data: {
-
+		commentCreatedAt: ""
 	},
 
-	/**
-	 * 组件的方法列表
-	 */
-	methods: {
-
+	lifetimes: {
+		attached: function() {
+			// console.log(this.properties.rootComment);
+			if(this.properties.rootComment) {
+				let date = new Date(this.properties.rootComment.created_at);
+				let m = date.getMonth();
+				let month = m + 1 >= 10 ? m + 1 : '0' + (m + 1);
+				this.setData({
+					commentCreatedAt: `${month}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}`
+				})
+			}
+		}
 	}
+
 })

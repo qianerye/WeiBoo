@@ -1,0 +1,2 @@
+<!--components/detail-loading/detail-loading.wxml-->
+<text class="detail-loading">加载中...</text>

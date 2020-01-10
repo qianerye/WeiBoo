@@ -15,7 +15,8 @@
   },
   "usingComponents" : {
     "bar-navigation" : "/components/bar-navigation/bar-navigation",
-    "weiboo-article" : "components/weiboo-article/weiboo-article"
+    "weiboo-article" : "components/weiboo-article/weiboo-article",
+    "hot-search-list": "/components/hot-search-list/hot-search-list"
   },
   "tabBar": {
     "selectedColor": "#000",

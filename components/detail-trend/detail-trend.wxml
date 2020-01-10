@@ -1,0 +1,39 @@
+<!--components/detail-trend/detail-trend.wxml-->
+<view class="detail-trend-wrap">
+	<view class="detail-trend-title">
+		<text>大家都在看</text>
+	</view>
+
+	<view class="trend-content">
+		<view class="left-trend">
+			<view class="trend-item" wx:for="{{leftTrend}}" wx:key="unique">
+				<image class="trend-img" mode="widthFix" src="{{item.src}}"></image>
+				<view class="trend-info">
+					<view class="trend-title">{{item.title}}</view>
+					<view class="trend-tool">
+						<image class="user-head" src="{{item.userHead}}"></image>
+						<text class="user-name">{{item.userName}}</text>
+						<text class="iconfont icon-dianzan">
+							<text class="zan-count">{{item.zan}}</text>
+						</text>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="right-trend">
+			<view class="trend-item" wx:for="{{rightTrend}}" wx:key="unique">
+				<image class="trend-img" mode="widthFix" src="{{item.src}}"></image>
+				<view class="trend-info">
+					<view class="trend-title">{{item.title}}</view>
+					<view class="trend-tool">
+						<image class="user-head" src="{{item.userHead}}"></image>
+						<text class="user-name">{{item.userName}}</text>
+						<text class="iconfont icon-dianzan">
+							<text class="zan-count">{{item.zan}}</text>
+						</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
