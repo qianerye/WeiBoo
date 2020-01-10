@@ -1,2 +1,43 @@
 <bar-navigation barText='消息箱'></bar-navigation>
-<text>消息</text>
+<view class="warp-box">
+	<view class="item-box">
+		<view class="icon-box icon-one">
+			<text class=" icon-left">@</text>
+		</view>
+		<view class="txt-box">
+			<text class="item-txt">@我的</text>
+      <text class="iconfont icon-xiangyoujiantou icon-right"></text>
+		</view>
+	</view>
+
+	<view class="item-box">
+		<view class="icon-box icon-two">
+			<text class="iconfont icon-pinglun1 icon-left"></text>
+		</view>
+		<view class="txt-box">
+			<text class="item-txt">评论</text>
+      <text class="iconfont icon-xiangyoujiantou icon-right"></text>
+		</view>
+	</view>
+
+  <view class="item-box">
+		<view class="icon-box icon-three">
+			<text class="iconfont icon-zan icon-left"></text>
+		</view>
+		<view class="txt-box">
+			<text class="item-txt">赞</text>
+      <text class="iconfont icon-xiangyoujiantou icon-right"></text>
+		</view>
+	</view>
+
+  <view class="item-box">
+		<view class="icon-box icon-four">
+			<text class="iconfont icon-fuwuerji icon-left"></text>
+		</view>
+		<view class="txt-box">
+			<text class="item-txt">微博管理员</text>
+      <text class="iconfont icon-xiangyoujiantou icon-right"></text>
+		</view>
+	</view>
+
+</view>

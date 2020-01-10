@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+   
   },
 
   /**
@@ -26,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+   
   },
 
   /**
@@ -62,5 +62,22 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  mySignIn:function(){
+    // wx.login({
+    //   success (res) {
+    //     if (res.code) {
+    //       //发起网络请求
+    //       wx.request({
+    //         url: 'https://test.com/onLogin',
+    //         data: {
+    //           code: res.code
+    //         }
+    //       })
+    //     } else {
+    //       console.log('登录失败！' + res.errMsg)
+    //     }
+    //   }
+    // })
   }
 })

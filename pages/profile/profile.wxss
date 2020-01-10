@@ -1,1 +1,192 @@
-/* pages/profile/profile.wxss */
+.my-header{
+  height: 264rpx;
+  width: 100%;
+  background-color: #fff;
+  border-bottom:1rpx solid #ddd
+}
+.my-header-top{
+  height: 160rpx;
+  display: flex;
+  justify-content:space-between
+}
+.my-header-top-left{
+  flex: 1;
+  margin-left:24rpx;
+  display: flex;
+}
+.my-portrait{
+  width:108rpx;
+  height:108rpx;
+  border:1rpx solid #ddd;
+  border-radius: 50%;
+}
+.my-port-message{
+  font-size: 28rpx;
+  color:#4f4b4b;
+  margin:12rpx 0 0 32rpx;
+}
+.my-header-top-right{
+  width: 170rpx;
+  margin-right:26rpx;
+  border:1rpx solid #6a7179;
+  border-radius: 40rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  margin-top: 15rpx;
+}
+.sign-btn{
+  font-size: 28rpx;
+  color:#4f4b4b
+}
+.my-header-bottom{
+  height: 104rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.my-header-bottom-item{
+  display: flex;
+  flex-direction: column;
+  align-items:center
+}
+.my-header-bottom-item-number{
+  font-size: 36rpx;
+  color:#000;
+  /* font-weight: 600; */
+}
+.my-header-bottom-item-txt{
+  font-size: 28rpx;
+  color: #4f4b4b;
+}
+
+.my-fabulous{
+  margin-top:20rpx;
+  height:88rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.my-fabulous-left{
+  height:100%;
+  line-height: 88rpx;
+  text-align: center;
+  display: flex;
+}
+.icon-star{
+  font-size:48rpx;
+  color: #595e61;
+  margin-left: 28rpx;
+}
+.my-fabulous-left-txt{
+  color:#2e2e2e;
+  font-size: 28rpx;
+  margin-left: 18rpx;
+}
+.my-fabulous-right{
+  height:100%;
+  width: 90rpx;
+  line-height: 88rpx;
+  text-align: center;
+}
+.icon-xiangzuojiantou{
+  font-size: 30rpx;
+  font-weight: 800;
+  color:#d7d7d7
+}
+
+.my-wallet-box{
+  width: auto;
+  padding:20rpx 26rpx;
+  background: linear-gradient(to bottom right, #f7f7f7, #fff);
+}
+.my-wallet-content{
+  width:100%;
+  background: linear-gradient(to bottom right, #fe960f, #ffd505);
+  height: 224rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color:#fff
+}
+.my-wallet-content-left{
+  display: flex;
+  flex-direction: column;
+  margin-left:15%
+}
+
+.my-wallet-content-right{
+  display: flex;
+  flex-direction: column;
+  margin-right:15%
+}
+.my-wallet-content-middle{
+  border-right:1rpx solid #ccc;
+  height:80rpx;
+  margin-top: 20rpx;
+}
+.my-wallet-txt{
+  font-size: 28rpx;
+}
+.my-wallet-num{
+  font-size: 60rpx;
+  text-align: center;
+}
+.my-wallet-number{
+  margin-left: 16rpx;
+}
+
+.my-record-box{
+  height: 272rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.my-record-top{
+  height:94rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.my-record-top-border{
+  width: 6rpx;
+  height:28rpx;
+  background-color: #fe960f;
+  border-radius: 2rpx;
+}
+.my-record-top-txt{
+  font-size: 30rpx;
+  color: #080808;
+  margin-left: 20rpx;
+}
+.my-record-bottom{
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: space-around;
+}
+.my-record-bottom-item{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.my-record-bottom-item-circular{
+  width: 78rpx;
+  height:78rpx;
+  background-color: #ffbd35;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+
+}
+.my-record-bottom-item-date{
+  font-size:24rpx;
+  color:#6f6f6f
+}
+

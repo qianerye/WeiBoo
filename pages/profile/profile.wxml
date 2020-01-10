@@ -1,2 +1,112 @@
-<bar-navigation></bar-navigation>
-<text>我的</text>
+<bar-navigation barText=''></bar-navigation>
+<view class="my-header">
+	<view class="my-header-top">
+		<view class="my-header-top-left">
+			<view class="my-portrait">
+			</view>
+			<text class="my-port-message">暂无介绍</text>
+		</view>
+		<view class="my-header-top-right" bindtap="mySignIn">
+			<text class="sign-btn">登录</text>
+		</view>
+	</view>
+	<view class="my-header-bottom">
+		<view class="my-header-bottom-item">
+			<text class="my-header-bottom-item-number">0</text>
+			<text class="my-header-bottom-item-txt">微博</text>
+		</view>
+		<view class="my-header-bottom-item">
+			<text class="my-header-bottom-item-number">0</text>
+			<text class="my-header-bottom-item-txt">关注</text>
+		</view>
+		<view class="my-header-bottom-item">
+			<text class="my-header-bottom-item-number">0</text>
+			<text class="my-header-bottom-item-txt">粉丝</text>
+		</view>
+	</view>
+</view>
+
+<view class="my-fabulous">
+	<view class="my-fabulous-left">
+		<text class="iconfont icon-star"></text>
+		<text class="my-fabulous-left-txt">我的赞/收藏</text>
+	</view>
+	<view class="my-fabulous-right">
+		<text class="iconfont icon-xiangyoujiantou"></text>
+	</view>
+</view>
+
+<view class="my-wallet-box">
+	<view class="my-wallet-content">
+		<view class="my-wallet-content-left">
+			<text class="my-wallet-txt">我的零钱</text>
+			<view class="my-wallet-num-box">
+				<text class="my-wallet-num">￥</text>
+				<text class="my-wallet-num my-wallet-number">0</text>
+			</view>
+		</view>
+		<view class="my-wallet-content-middle"></view>
+		<view class="my-wallet-content-right">
+			<text class="my-wallet-txt">任务积分</text>
+			<text class="my-wallet-num">0</text>
+		</view>
+	</view>
+</view>
+
+<view class="my-record-box">
+	<view class="my-record-top">
+		<view class="my-record-top-border"></view>
+		<text class="my-record-top-txt">每日签到领红包</text>
+	</view>
+	<view class="my-record-bottom">
+		<view class="my-record-bottom-item">
+			<view class="my-record-bottom-item-circular">
+				<text class="my-recorded">已签</text>
+				<text class="my-record-bottom-item-num">+5</text>
+			</view>
+			<view class="my-record-bottom-item-date">第1天</view>
+		</view>
+		<view class="my-record-bottom-item">
+			<view class="my-record-bottom-item-circular">
+				<text class="my-recorded">已签</text>
+				<text class="my-record-bottom-item-num">+5</text>
+			</view>
+			<view class="my-record-bottom-item-date">第2天</view>
+		</view>
+		<view class="my-record-bottom-item">
+			<view class="my-record-bottom-item-circular">
+				<text class="my-recorded">已签</text>
+				<text class="my-record-bottom-item-num">+5</text>
+			</view>
+			<view class="my-record-bottom-item-date">第3天</view>
+		</view>
+		<view class="my-record-bottom-item">
+			<view class="my-record-bottom-item-circular">
+				<text class="my-recorded">已签</text>
+				<text class="my-record-bottom-item-num">+5</text>
+			</view>
+			<view class="my-record-bottom-item-date">第4天</view>
+		</view>
+		<view class="my-record-bottom-item">
+			<view class="my-record-bottom-item-circular">
+				<text class="my-recorded">已签</text>
+				<text class="my-record-bottom-item-num">+5</text>
+			</view>
+			<view class="my-record-bottom-item-date">第5天</view>
+		</view>
+		<view class="my-record-bottom-item">
+			<view class="my-record-bottom-item-circular">
+				<text class="my-recorded">已签</text>
+				<text class="my-record-bottom-item-num">+5</text>
+			</view>
+			<view class="my-record-bottom-item-date">第6天</view>
+		</view>
+    	<view class="my-record-bottom-item">
+			<view class="my-record-bottom-item-circular">
+				<text class="my-recorded">已签</text>
+				<text class="my-record-bottom-item-num">+5</text>
+			</view>
+			<view class="my-record-bottom-item-date">第7天</view>
+		</view>
+	</view>
+</view>

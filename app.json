@@ -21,9 +21,8 @@
     "hot-search-list": "/components/hot-search-list/hot-search-list"
   },
   "tabBar": {
-    "selectedColor" : "#000",
-    "list": [
-      {
+    "selectedColor": "#000",
+    "list": [{
         "pagePath": "pages/follow/follow",
         "text": "关注",
         "iconPath": "/icons/home.png",

@@ -1,7 +1,7 @@
 //app.js
 App({
   globalData :{
-
+    isSignIn:false
   },
   onLaunch: function () {
     let menuButtonObject = wx.getMenuButtonBoundingClientRect();
