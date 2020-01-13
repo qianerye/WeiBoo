@@ -1,0 +1,2 @@
+<!--pages/transfer/transfer.wxml-->
+<bar-navigation barText='发微博'></bar-navigation>

@@ -7,7 +7,8 @@
     "pages/profile/profile",
     "pages/detail/detail",
     "pages/searchlist/searchlist",    
-    "pages/hotSearchDetail/hotSearchDetail"
+    "pages/hotSearchDetail/hotSearchDetail",
+    "pages/transfer/transfer"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,7 +35,7 @@
         "selectedIconPath": "/icons/search_fill.png"
       },
       {
-        "pagePath": "pages/release/release",
+        "pagePath": "pages/transfer/transfer",
         "text": "发布",
         "iconPath": "/icons/edit.png",
         "selectedIconPath": "/icons/edit_fill.png"
